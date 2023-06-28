@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Список завдань</title>
+  <style>
+    .task-list {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .task-list li {
+      background-color: #f0f0f0;
+      padding: 10px;
+      margin-bottom: 5px;
+    }
+    
+    .task-list li:nth-child(even) {
+      background-color: #cde8ff;
+    }
+    
+    .task-list li:nth-child(odd) {
+      background-color: #addbff;
+    }
+    
+    .task-list li.completed-task {
+      background-color: #929292;
+    }
+    .red-cross {
+    color: red;
+    margin-left: 20px;
+  }
+  img{
+    margin-right: 10px;
+  }
+  </style>
+</head>
+<body>
+  <ul class="task-list">
+    <li><img src="icons/unchecked_16.png" alt="unchecked_16"> Завдання 1 <span class="red-cross">&#x2716;</span></li>
+    <li><img src="icons/unchecked_16.png" alt="unchecked_16"> Завдання 2 <span class="red-cross">&#x2716;</span></li>
+    <li><img src="icons/unchecked_16.png" alt="unchecked_16"> Завдання 3 <span class="red-cross">&#x2716;</span></li>
+    <li><img src="icons/unchecked_16.png" alt="unchecked_16"> Завдання 4 <span class="red-cross">&#x2716;</span></li>
+    <li><img src="icons/unchecked_16.png" alt="unchecked_16"> Завдання 5 <span class="red-cross">&#x2716;</span></li>
+    <li class="completed-task"><img src="icons/checked_16.png" alt="checked_16"> <span style="text-decoration: line-through;">Завдання 6</span><span class="red-cross">&#x2716;</span></li>
+  </ul>
+</body>
+</html>
